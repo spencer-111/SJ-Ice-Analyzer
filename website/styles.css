@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  background: #6dd1ed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.viewer-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between arrows and main container */
+}
+
+.main-container {
+  min-width: 400px;  /* ensures content never too small */
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  height: 50vh;
+  width: auto;
+}
+
+.arrow {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;       /* makes it a flex container */
+  flex-direction: row; /* default, horizontal layout */
+  gap: 1rem;           /* spacing between items */
+}
+
+.menu {
+  display: flex;       /* makes it a flex container */
+  flex-direction: row; /* default, horizontal layout */
+  gap: 1rem;           /* spacing between items */
+  font-size: 3rem;
+  white-space: pre;
+}
+
+#description {
+    text-align: center;
+    min-height: 4em;
+}
+
